@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+    //Program counts the area of the plot
+
+    int a,b;
+    std::string start;
+
+    cout<<"Write 'RUN' to start program"<<endl;
+    cin>> start;
+
+    if(start != "RUN")
+    {
+        cout<<"Wrong commnad";
+        return 0;
+    }
+
+    cout << "Uncle McDonaldâ€™s farm" << endl;
+    cout << "Program counts the area of the plot " << endl;
+    cout << "Enter value of a :" << endl;
+    cin >> a;
+    cout << "Enter value of b :" << endl;
+    cin >> b;
+        if ((a,b>0)&&(b>a))
+         cout << "How many meters of fence is available : " << a*b << endl;
+        else
+         cout << "Data error" << endl;
+         cout << "The total fence length is :" << a+a+b << endl;
+
+    return 0;
+}
