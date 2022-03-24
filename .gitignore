@@ -1,32 +1,36 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <string>
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+using namespace std;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+int main()
+{
+    //Program counts the area of the plot
 
-# Fortran module files
-*.mod
-*.smod
+    int a,b;
+    std::string start;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+    cout<<"Write 'RUN' to start program"<<endl;
+    cin>> start;
 
-# Executables
-*.exe
-*.out
-*.app
+    if(start != "RUN")
+    {
+        cout<<"Wrong commnad";
+        return 0;
+    }
+
+    cout << "Uncle McDonaldâ€™s farm" << endl;
+    cout << "Program counts the area of the plot " << endl;
+    cout << "Enter value of a :" << endl;
+    cin >> a;
+    cout << "Enter value of b :" << endl;
+    cin >> b;
+        if ((a,b>0)&&(b>a))
+         cout << "How many meters of fence is available : " << a*b << endl;
+        else
+         cout << "Data error" << endl;
+         cout << "The total fence length is :" << a+a+b << endl;
+
+    return 0;
+}
